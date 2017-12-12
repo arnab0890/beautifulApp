@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="beautifulApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gradient background 09 iPhone 6 Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="TUy-i1-PiR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImF-3T-dYz">
+                                <rect key="frame" x="16" y="184" width="343" height="584"/>
+                                <state key="normal" image="dog-png-image"/>
+                                <connections>
+                                    <action selector="bowbow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wxH-YG-woZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bow bow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="33" translatesAutoresizingMaskIntoConstraints="NO" id="ZhU-Ux-TQf">
+                                <rect key="frame" x="16" y="64" width="343" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="sII-ZB-WId"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="65"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="TUy-i1-PiR" secondAttribute="bottom" id="0ea-P9-BtM"/>
+                            <constraint firstItem="TUy-i1-PiR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1nX-Yv-pzs"/>
+                            <constraint firstItem="ZhU-Ux-TQf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QAt-JV-KbA"/>
+                            <constraint firstItem="TUy-i1-PiR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WcS-l3-HYe"/>
+                            <constraint firstItem="ImF-3T-dYz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="d0u-K0-FtZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZhU-Ux-TQf" secondAttribute="trailing" constant="16" id="eTJ-fU-SsM"/>
+                            <constraint firstItem="TUy-i1-PiR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="f5K-ch-1em"/>
+                            <constraint firstItem="ZhU-Ux-TQf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="fPN-ov-btC"/>
+                            <constraint firstItem="ImF-3T-dYz" firstAttribute="top" secondItem="ZhU-Ux-TQf" secondAttribute="bottom" constant="41" id="osz-Y3-M9j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ImF-3T-dYz" secondAttribute="trailing" constant="16" id="tcu-6k-Cp2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ImF-3T-dYz" secondAttribute="bottom" constant="10" id="zDz-mb-cFB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="ImF-3T-dYz" id="MWV-HT-ub8"/>
+                        <outlet property="label" destination="ZhU-Ux-TQf" id="PKA-hA-7bc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.59999999999999" y="37.684729064039409"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Gradient background 09 iPhone 6 Wallpaper" width="750" height="1334"/>
+        <image name="dog-png-image" width="245" height="358"/>
+    </resources>
+</document>
